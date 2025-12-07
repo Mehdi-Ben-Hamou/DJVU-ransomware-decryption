@@ -39,7 +39,6 @@ ransomware_project/
 ├── detect.py
 ├── fake_rans.py
 └── README.md
----
 ```
 ## Getting Started
 ### Clone the repository
