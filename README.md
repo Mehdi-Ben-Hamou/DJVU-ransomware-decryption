@@ -1,20 +1,41 @@
 # 🛡️ DJVU Ransomware Decryption Tool
 
-Ce projet a pour objectif d'assister les victimes du ransomware **DJVU/STOP** en analysant les fichiers chiffrés et en essayant de restaurer les fichiers originaux lorsque cela est possible.
+This project aims to help victims of the **DJVU/STOP ransomware** by analyzing encrypted files and attempting to restore original data whenever possible.
 
 ---
 
-## 🔍 À propos
+## 🔍 About the Project
+The **DJVU ransomware** encrypts user files and appends a variant-specific extension  
+(e.g., `.djvu`, `.gero`, `.seto`, `.boop`, etc.).
 
-Le ransomware **DJVU** chiffre les fichiers personnels des utilisateurs et ajoute une extension spécifique (comme `.djvu`, `.gero`, `.seto`, `.boop`, etc.).  
-Ce projet propose un outil de détection de fichiers chiffrés par DJVU et intègre les bases d'une tentative de déchiffrement (quand la clé est connue ou que le fichier original est accessible pour comparaison).
+This tool provides:
+- Detection of encrypted DJVU files  
+- Analysis of folders containing encrypted content  
+- Basic decryption attempts  
+  - using known static keys  
+  - or comparing encrypted/original files (when available)
 
 ---
 
-## 📁 Fonctionnalités
+## 📁 Features
+- 🔎 **Automatic detection** of DJVU-encrypted files  
+- 📂 **Recursive folder analysis**  
+- 🔐 **Decryption attempts** based on known keys or file comparison  
+- 📊 **Result report** (success / failure)  
+- 🛠️ **Easily extendable** to other STOP/DJVU ransomware variants  
 
-- 🔎 Détection de fichiers chiffrés par DJVU
-- 📂 Analyse automatique d’un dossier contenant les fichiers chiffrés
-- 🔐 Tentative de déchiffrement avec clés statiques ou comparaison fichier chiffré/fichier original
-- 📊 Affichage des résultats (réussite ou échec du déchiffrement)
-- 🛠️ Conçu pour être facilement extensible à d'autres variantes de STOP/DJVU
+---
+
+## 📂 Project Structure
+```text
+ransomware_project/
+├── test_directory/
+│   ├── README.txt
+│   ├── Test.jpg
+│   ├── Test.pdf
+│   └── Test.txt
+├── Rapport_Rans.pdf
+├── aes_key.txt
+├── detect.py
+├── fake_rans.py
+└── README.md
