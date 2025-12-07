@@ -39,3 +39,39 @@ ransomware_project/
 ├── detect.py
 ├── fake_rans.py
 └── README.md
+---
+```
+## Getting Started
+### Clone the repository
+```bash
+git clone https://github.com/Mehdi-Ben-Hamou/DJVU-ransomware-decryption
+cd DJVU-ransomware-decryption
+```
+### Test the fake ransomware (for education)
+```bash
+python fake_rans.py
+```
+## Run the decryption script
+```bash
+python decrypt.py
+````
+## ⚠️ This script is for educational and research purposes ONLY.
+Do not use it for malicious activity.
+
+## 📄 Files Description
+### File	Description
+fake_rans.py	Simulation of DJVU-like encryption (for testing)
+decrypt.py	python script for decryption
+aes_key.txt	Key used by the fake ransomware
+test_directory/	Folder containing test files
+Rapport_Rans.pdf	Project report
+README.md	Documentation
+
+## 🔗 Notes
+- Decrypting DJVU is only possible for specific variants depending on the key used.
+- Modern DJVU variants use online keys → usually not decryptable without the attacker’s key.
+- This tool focuses on static-key variants and file comparison methods.
+
+## 📜 Disclaimer
+**This project is strictly for educational, research, and cybersecurity awareness purposes.**
+**I'm not responsible for any misuse.**
