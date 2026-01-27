@@ -1,10 +1,10 @@
-# 🛡️ DJVU Ransomware Decryption Tool
+# DJVU Ransomware Decryption Tool
 
 This project aims to help victims of the **DJVU/STOP ransomware** by analyzing encrypted files and attempting to restore original data whenever possible.
 
 ---
 
-## 🔍 About the Project
+## About the Project
 The **DJVU ransomware** encrypts user files and appends a variant-specific extension  
 (e.g., `.djvu`, `.gero`, `.seto`, `.boop`, etc.).
 
@@ -17,7 +17,7 @@ This tool provides:
 
 ---
 
-## 📁 Features
+## Features
 - 🔎 **Automatic detection** of DJVU-encrypted files  
 - 📂 **Recursive folder analysis**  
 - 🔐 **Decryption attempts** based on known keys or file comparison  
@@ -26,7 +26,7 @@ This tool provides:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```text
 ransomware_project/
 ├── test_directory/
@@ -57,7 +57,7 @@ python decrypt.py
 ## ⚠️ This script is for educational and research purposes ONLY.
 Do not use it for malicious activity.
 
-## 📄 Files Description
+## Files Description
 ### File	Description
 fake_rans.py	Simulation of DJVU-like encryption (for testing)
 decrypt.py	python script for decryption
@@ -66,11 +66,11 @@ test_directory/	Folder containing test files
 Rapport_Rans.pdf	Project report
 README.md	Documentation
 
-## 🔗 Notes
+## Notes
 - Decrypting DJVU is only possible for specific variants depending on the key used.
 - Modern DJVU variants use online keys → usually not decryptable without the attacker’s key.
 - This tool focuses on static-key variants and file comparison methods.
 
-## 📜 Disclaimer
+## Disclaimer
 **This project is strictly for educational, research, and cybersecurity awareness purposes.**
 **I'm not responsible for any misuse.**
